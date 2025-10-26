@@ -1,0 +1,56 @@
+#!/bin/bash
+
+
+# nano ~/.bashrc
+
+# sudo nano /etc/hosts
+hosts
+127.0.0.1       lira.test       # add entry
+
+
+# confirm php version
+ls /run/php/
+
+
+sudo nano /etc/nginx/sites-available/lira.test
+
+server {
+    listen 80;
+    server_name lira.test;
+
+    root /var/www/lira.test/public;
+    index index.php index.html index.htm;
+
+    access_log /var/log/nginx/lira_access.log;
+    error_log /var/log/nginx/lira_error.log;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php8.3-fpm.sock; # Adjust if different
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+sudo ln -s /etc/nginx/sites-available/lira.test /etc/nginx/sites-enabled/
+sudo nginx -t
+
+# Restart
+sudo systemctl restart nginx
+sudo systemctl restart php8.3-fpm
+
+# set permissions
+sudo chown -R $USER:www-data /var/www/lira.test
+sudo chmod -R 775 /var/www/lira.test/storage /var/www/lira.test/bootstrap/cache
+
+
+# Access website at
+http://lira.test

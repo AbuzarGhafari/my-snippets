@@ -4,12 +4,14 @@
 
 echo 'addalias() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
 
+addalias home "cd ~"
 addalias lira "cd /var/www/lira.test"
 addalias www "cd /var/www"
 addalias pa "php artisan"
 addalias nb "npm run build"
 addalias nd "npm run dev"
 addalias my-snip "cd ~/my-snippets"
+addalias hosts "sudo nano /etc/hosts"
 
 
 # View alias commands
