@@ -1,7 +1,6 @@
 {
     "workbench.iconTheme": "material-icon-theme",
     "security.workspace.trust.untrustedFiles": "open",
-    "chat.agent.enabled": false,
     "editor.stickyScroll.enabled": false,
     "editor.stickyScroll.scrollWithEditor": false,
     "workbench.tree.enableStickyScroll": false,
@@ -71,6 +70,13 @@
     // "workbench.editor.enablePreviewFromQuickOpen": false,
     // "editor.gotoLocation.multipleImplementations": "goto",
     // "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+    "chat.openChat.enabled": false,
+    "chat.experimental.showChatOnStartup": false,
+    "chat.editor.autoOpen": false,
+    "chat.editor.openToSide": false,
+    "workbench.experimental.chat.enabled": false,
+
 
     /**
     * PHP
@@ -172,7 +178,7 @@
             }
           ]
     },
-    "material-icon-theme.saturation": 0,
+    // "material-icon-theme.saturation": 0,
     // Custom CSS and JS
     "vscode_custom_css.imports": [
         "file:///home/abuzar/my-snippets/vscode-setup/vscode.css",
@@ -183,6 +189,10 @@
     "chat.commandCenter.enabled": false,
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
-    "window.commandCenter": false
+    "window.commandCenter": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "chat.checkpoints.enabled": false,
+    "chat.detectParticipant.enabled": false,
+    "chat.agent.enabled": false
 
 }
