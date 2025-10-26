@@ -1,0 +1,15 @@
+# nano ~/.bashrc
+# source ~/.bashrc
+
+
+echo 'addalias() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
+
+addalias lira "cd /var/www/lira.test"
+addalias www "cd /var/www"
+addalias pa "php artisan"
+addalias nb "npm run build"
+addalias nd "npm run dev"
+
+
+# View alias commands
+alias
