@@ -154,7 +154,6 @@
     "editor.fontWeight": "400",
     "workbench.activityBar.location": "hidden",
     "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.padding.top": 16,
     "editor.cursorBlinking": "solid",
 
     "editor.tokenColorCustomizations": {
@@ -193,6 +192,17 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "chat.checkpoints.enabled": false,
     "chat.detectParticipant.enabled": false,
-    "chat.agent.enabled": false
+    "chat.agent.enabled": false,
+
+    "editor.lineNumbers": "on",
+    "editor.glyphMargin": false,
+    "editor.padding.top": 0,
+    "editor.padding.bottom": 0,
+    "editor.padding.left": 0,
+    "editor.padding.right": 0,
+    // "editor.renderLineHighlight": "none"
+
+    "workbench.editor.tabSizing": "shrink",
+    // "workbench.editor.showIcons": false
 
 }
