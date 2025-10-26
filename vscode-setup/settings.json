@@ -56,7 +56,7 @@
     // "workbench.tips.enabled": false,
     // "editor.colorDecorators": false,
     // "git.decorations.enabled": false,
-    // "workbench.startupEditor": "none",
+    "workbench.startupEditor": "none",
     // "editor.lightbulb.enabled": "off",
     // "editor.selectionHighlight": false,
     // "editor.overviewRulerBorder": false,
