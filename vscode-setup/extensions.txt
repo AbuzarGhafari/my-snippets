@@ -10,6 +10,7 @@ ctf0.laravel-goto-controller
 ctf0.laravel-goto-view
 dsznajder.es7-react-js-snippets
 esbenp.prettier-vscode
+mehedidracula.php-namespace-resolver
 mhutchie.git-graph
 mrchetan.laravel-goto-config
 mrchetan.vscode-php-array-symbols

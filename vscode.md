@@ -48,3 +48,16 @@ xargs -n 1 code --install-extension < ~/my-snippets/vscode-setup/extensions.txt
 cp ~/my-snippets/vscode-setup/settings.json ~/.config/Code/User/settings.json
 cp ~/my-snippets/vscode-setup/keybindings.json ~/.config/Code/User/keybindings.json
 ```
+
+
+## Copy my current settings
+```bash
+cp ~/.config/Code/User/settings.json ~/my-snippets/vscode-setup/settings.json
+cp ~/.config/Code/User/keybindings.json ~/my-snippets/vscode-setup/keybindings.json
+```
+
+## Export installed extensions to file 
+```bash
+cd ~/my-snippets/vscode-setup
+code --list-extensions > extensions.txt
+```
