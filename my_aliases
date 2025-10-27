@@ -5,6 +5,7 @@
 echo 'addalias() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
 
 addalias home "cd ~"
+addalias desktop "cd ~/Desktop"
 addalias lira "cd /var/www/lira.test"
 addalias www "cd /var/www"
 addalias pa "php artisan"

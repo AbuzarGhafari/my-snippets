@@ -7,7 +7,6 @@ chunsen.bracket-select
 cjhowe7.laravel-blade
 codingyu.laravel-goto-view
 ctf0.laravel-goto-controller
-ctf0.laravel-goto-view
 dsznajder.es7-react-js-snippets
 esbenp.prettier-vscode
 mehedidracula.php-namespace-resolver
@@ -20,4 +19,5 @@ pkief.material-icon-theme
 porifa.laravel-intelephense
 shufo.vscode-blade-formatter
 sibiraj-s.vscode-scss-formatter
+wayou.vscode-todo-highlight
 zobo.php-intellisense
