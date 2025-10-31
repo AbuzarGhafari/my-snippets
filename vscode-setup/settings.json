@@ -116,7 +116,6 @@
         "editor.defaultFormatter": "apility.beautify-blade",
         "editor.formatOnSave": true
     },
-    "editor.wordWrapColumn": 120,
     "files.autoSave": "afterDelay",
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -136,14 +135,12 @@
     "editor.formatOnSave": false,
     // "editor.fontLigatures": false,
     "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
-    "diffEditor.wordWrap": "on",
     "notebook.output.wordWrap": true,
     "editor.fontSize": 16,
     "editor.minimap.maxColumn": 250,
     "explorer.confirmDelete": false,
     "editor.accessibilitySupport": "off",
     "chat.editor.wordWrap": "on",
-    "editor.wordWrap": "wordWrapColumn",
     "[php]": {
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
     },
