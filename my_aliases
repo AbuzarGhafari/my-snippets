@@ -32,6 +32,10 @@ addalias nd "npm run dev"
 
 addalias hosts "sudo nano /etc/hosts"
 
+# --------------------------------------
+# Terminal
+# --------------------------------------
+aa tsc "exec bash"  # Terminal Session Clear
 
 # View alias commands
 alias
