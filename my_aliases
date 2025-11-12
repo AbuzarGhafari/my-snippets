@@ -8,6 +8,8 @@ source ~/.bashrc
 echo 'addalias() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
 echo 'aa() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
 echo "alias gcp='f() { git add . && git commit -m \"\$1\" && git push; }; f'" >> ~/.bashrc && source ~/.bashrc
+echo "alias gp='f() { git add . && git commit && git push; }; f'" >> ~/.bashrc && source ~/.bashrc
+
 
 addalias home "cd ~"
 addalias desktop "cd ~/Desktop"
@@ -16,8 +18,15 @@ addalias www "cd /var/www"
 addalias my-snip "cd ~/my-snippets"
 addalias ms "cd ~/my-snippets"
 
+# --------------------------------------
+# Laravel Aliases
+# --------------------------------------
 addalias pa "php artisan"
 addalias pas "php artisan serve"
+addalias pamf "php artisan migrate:fresh"
+addalias pamfs "php artisan migrate:fresh --seed"
+
+
 addalias nb "npm run build"
 addalias nd "npm run dev"
 
