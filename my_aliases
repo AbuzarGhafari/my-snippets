@@ -25,6 +25,7 @@ addalias pa "php artisan"
 addalias pas "php artisan serve"
 addalias pamf "php artisan migrate:fresh"
 addalias pamfs "php artisan migrate:fresh --seed"
+addalias parl "php artisan route:list"
 
 
 addalias nb "npm run build"
