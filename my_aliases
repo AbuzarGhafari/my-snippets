@@ -1,17 +1,26 @@
-# nano ~/.bashrc
-# source ~/.bashrc
+nano ~/.bashrc
+
+alias gcp='f() { git add . && git commit -m "$1" && git push; }; f'
+
+source ~/.bashrc
 
 
 echo 'addalias() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
+echo 'aa() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
+echo "alias gcp='f() { git add . && git commit -m \"\$1\" && git push; }; f'" >> ~/.bashrc && source ~/.bashrc
 
 addalias home "cd ~"
 addalias desktop "cd ~/Desktop"
 addalias lira "cd /var/www/lira.test"
 addalias www "cd /var/www"
+addalias my-snip "cd ~/my-snippets"
+addalias ms "cd ~/my-snippets"
+
 addalias pa "php artisan"
+addalias pas "php artisan serve"
 addalias nb "npm run build"
 addalias nd "npm run dev"
-addalias my-snip "cd ~/my-snippets"
+
 addalias hosts "sudo nano /etc/hosts"
 
 
