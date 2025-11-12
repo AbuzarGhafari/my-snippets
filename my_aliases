@@ -9,6 +9,22 @@ echo 'addalias() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc &
 echo 'aa() { echo "alias $1='\''$2'\''" >> ~/.bashrc && source ~/.bashrc && echo "✅ Alias added: $1 → $2"; }' >> ~/.bashrc && source ~/.bashrc
 echo "alias gcp='f() { git add . && git commit -m \"\$1\" && git push; }; f'" >> ~/.bashrc && source ~/.bashrc
 echo "alias gp='f() { git add . && git commit && git push; }; f'" >> ~/.bashrc && source ~/.bashrc
+echo 'ua() {
+  if [ $# -lt 2 ]; then
+    echo "Usage: ua <alias_name> <command>"
+    return 1
+  fi
+  local name=$1
+  shift
+  local cmd="$*"
+  # Remove existing alias from .bashrc
+  sed -i "/^alias $name=/d" ~/.bashrc
+  # Add the new/updated alias
+  echo "alias $name='\''$cmd'\''" >> ~/.bashrc
+  # Reload .bashrc
+  source ~/.bashrc
+  echo "✅ Alias updated: $name → $cmd"
+}' >> ~/.bashrc && source ~/.bashrc
 
 
 addalias home "cd ~"
@@ -16,7 +32,7 @@ addalias desktop "cd ~/Desktop"
 addalias lira "cd /var/www/lira.test"
 addalias www "cd /var/www"
 addalias my-snip "cd ~/my-snippets"
-addalias ms "cd ~/my-snippets"
+addalias ms "cd ~/my-snippets && code ."
 
 # --------------------------------------
 # Laravel Aliases
