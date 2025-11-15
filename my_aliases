@@ -31,14 +31,14 @@ addalias home "cd ~"
 addalias desktop "cd ~/Desktop"
 addalias lira "cd /var/www/lira.test"
 addalias www "cd /var/www"
-addalias my-snip "cd ~/my-snippets"
-addalias ms "cd ~/my-snippets && code ."
+addalias snippets "cd ~/my-snippets && code ."
 
 # --------------------------------------
 # Laravel Aliases
 # --------------------------------------
 addalias pa "php artisan"
 addalias pas "php artisan serve"
+addalias pam "php artisan migrate"
 addalias pamf "php artisan migrate:fresh"
 addalias pamfs "php artisan migrate:fresh --seed"
 addalias parl "php artisan route:list"
@@ -53,6 +53,9 @@ addalias hosts "sudo nano /etc/hosts"
 # Terminal
 # --------------------------------------
 aa tsc "exec bash"  # Terminal Session Clear
+
+# Remove an alias
+unalias <alias_name>
 
 # View alias commands
 alias

@@ -7,12 +7,16 @@ chunsen.bracket-select
 cjhowe7.laravel-blade
 codingyu.laravel-goto-view
 ctf0.laravel-goto-controller
+ctf0.laravel-goto-view
 dsznajder.es7-react-js-snippets
 esbenp.prettier-vscode
 mehedidracula.php-namespace-resolver
 mhutchie.git-graph
 mrchetan.laravel-goto-config
 mrchetan.vscode-php-array-symbols
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode.remote-explorer
 naoray.laravel-goto-components
 onecentlin.laravel-blade
 pkief.material-icon-theme
