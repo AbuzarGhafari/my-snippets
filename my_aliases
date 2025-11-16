@@ -54,6 +54,12 @@ addalias hosts "sudo nano /etc/hosts"
 # --------------------------------------
 aa tsc "exec bash"  # Terminal Session Clear
 
+# --------------------------------------
+# PM2
+# --------------------------------------
+aa pmrl 'clear && pm2 flush && pm2 restart all && pm2 log'
+
+
 # Remove an alias
 unalias <alias_name>
 
