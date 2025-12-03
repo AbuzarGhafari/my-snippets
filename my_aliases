@@ -28,6 +28,8 @@ echo 'ua() {
 
 
 addalias home "cd ~"
+addalias cl "clear"
+addalias c. "code ."
 addalias desktop "cd ~/Desktop"
 addalias lira "cd /var/www/lira.test"
 addalias www "cd /var/www"
@@ -46,6 +48,12 @@ addalias parl "php artisan route:list"
 
 addalias nb "npm run build"
 addalias nd "npm run dev"
+
+# --------------------------------------
+# Laravel Packages
+# --------------------------------------
+aa packages "cd /var/www/packages"
+aa auth-package "cd /var/www/packages/lira-auth-package"
 
 addalias hosts "sudo nano /etc/hosts"
 
