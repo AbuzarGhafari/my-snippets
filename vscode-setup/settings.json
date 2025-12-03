@@ -118,7 +118,7 @@
     },
     "files.autoSave": "afterDelay",
     "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.css-language-features",
         "editor.formatOnSave": true
     },
 
@@ -201,5 +201,10 @@
 
     "workbench.editor.tabSizing": "shrink",
     // "workbench.editor.showIcons": false
+
+
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false
 
 }
